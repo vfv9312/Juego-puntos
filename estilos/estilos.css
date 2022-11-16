@@ -1,0 +1,9 @@
+body{
+    counter-reset: game;
+}
+input:checked{
+    counter-increment: game;
+}
+.total-contador::after{
+    content: counter(game);
+}

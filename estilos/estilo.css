@@ -1,0 +1,215 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.phone{
+    position: relative;
+    border: 8px solid black;
+    border-radius: 20px;
+    height: 600px;
+    width: 300px;
+    background: #CCEFFF;
+    box-shadow: 0 19px 38px rgb(0, 0, 0, 0.30), 
+    0 15px 12px rgb(0, 0, 0, 0.22);
+}
+.capa-1{
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    right: 60px;
+    background: aqua;
+}
+.capa-2{
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    left: 60px;
+    background: aqua;
+}
+.capa-3{
+    position: absolute;
+    z-index: 3;
+    height: 400px;
+    width: 220px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+.capa-4{
+    position: absolute;
+    z-index: 4;
+    height: 350px;
+    width: 80px;
+    bottom: 0;
+    right: 95px;
+    background: aqua;
+}
+.capa-5{
+    position: absolute;
+    z-index: 5;
+    height: 350px;
+    width: 80px;
+    bottom: 0;
+    left: 20px;
+    background: aqua;
+}
+.capa-6{
+    position: absolute;
+    z-index: 6;
+    height: 300px;
+    width: 220px;
+    bottom: 0;
+    left: 10;
+    margin: 0 auto;
+    background: beige;
+}
+.capa-7{
+    position: absolute;
+    z-index: 7;
+    height: 250px;
+    width: 80px;
+    bottom: 0;
+    right: 20px;
+    background: aqua;
+}
+.capa-8{
+    position: absolute;
+    z-index: 8;
+    height: 250px;
+    width: 80px;
+    bottom: 0;
+    right: 110px;
+    background: aqua;
+}
+.capa-9{
+    position: absolute;
+    z-index: 9;
+    height: 200px;
+    width: 220px;
+    bottom: 0;
+    right: 2px;
+    margin: 0 auto;
+    background: gold;
+}
+.capa-10{
+    position: absolute;
+    z-index: 10;
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    background: wheat;
+}
+.izquierda-oreja{
+    background: black;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    transform: rotate(-25deg);
+    position: absolute;
+    left: 10px;
+}
+.izquierda-oreja2{
+    background: red;
+    border-radius: 90%;
+    width: 10px;
+    height: 30px;
+    transform: rotate(-25deg);
+    position: absolute;
+    left: 15px;
+    top: 8px ;
+}
+.derecha-oreja{
+    background: black;
+    border-radius: 90%;
+    width: 20px;
+    height: 50px;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 10px;
+}
+.derecha-oreja2{
+    background: red;
+    border-radius: 90%;
+    width: 10px;
+    height: 30px;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 15px;
+    top: 8px ;
+}
+.cabeza{
+    background: black;
+    border-radius: 70%;
+    width: 80px;
+    height: 40px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    right: 0;
+}
+.ojo-izquierda{
+position: absolute;
+left: 22px;
+top: 15px;
+border-radius: 70%;
+background: red;
+width: 5px;
+height: 10px;
+transform: rotate(-25deg);
+}
+.ojo-derecha{
+    position: absolute;
+    right: 22px;
+    top: 15px;
+    border-radius: 70%;
+    background: red;
+    width: 5px;
+height: 10px;
+transform: rotate(25deg);
+}
+
+.capaverde:after{
+    content: "";
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    height: 30px;
+    background: linear-gradient(135deg, #67A167 25%, transparent 25%) -50px 0,
+                linear-gradient(-135deg, #67A167 25%, transparent 25%) -50px 0,
+                linear-gradient(45deg, #67A167 25%, transparent 25%),
+                linear-gradient(-45deg, #67A167 25%, transparent 25%);
+    background-size: 30px 80px;
+    border-radius: 20px;
+}
+.capaverde::before {
+    content: "";
+    position: absolute; 
+    /* left: -0px; */
+    top: 10px;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(135deg, #a6543d 25%, transparent 25%) -50px 0,
+                linear-gradient(-135deg, #a6543d 25%, transparent 25%) -50px 0,
+                linear-gradient(45deg, #a6543d 25%, transparent 25%),
+                linear-gradient(-45deg, #a6543d 25%, transparent 25%);
+    background-size: 30px 100px;
+    background-position: 140px 0 0 30px 0;
+}
